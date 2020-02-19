@@ -1,0 +1,966 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap');
+
+html {
+    color: #222;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    display: inline;
+}
+
+/*
+          * Remove text-shadow in selection highlight:
+          * https://twitter.com/miketaylr/status/12228805301
+          *
+          * Vendor-prefixed and regular ::selection selectors cannot be combined:
+          * https://stackoverflow.com/a/16982510/7133471
+          *
+          * Customize the background color to match your design.
+          */
+
+::-moz-selection {
+
+    text-shadow: none;
+}
+
+::selection {
+
+    text-shadow: none;
+}
+
+/*
+          * A better looking default horizontal rule
+          */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+          * Remove the gap between audio, canvas, iframes,
+          * images, videos and the bottom of their containers:
+          * https://github.com/h5bp/html5-boilerplate/issues/440
+          */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+          * Remove default fieldset styles.
+          */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+          * Allow only vertical resizing of textareas.
+          */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+            Browser Upgrade Prompt
+            ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+            Author's custom styles
+            ========================================================================== */
+
+/* ==========================================================================
+            Helper classes
+            ========================================================================== */
+
+/*
+          * Hide visually and from screen readers
+          */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+         * Hide only visually, but have it available for screen readers:
+         * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+         *
+         * 1. For long content, line feeds are not interpreted as spaces and small width
+         *    causes content to wrap 1 word per line:
+         *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+         */
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+}
+
+/*
+         * Extends the .sr-only class to allow the element
+         * to be focusable when navigated to via the keyboard:
+         * https://www.drupal.org/node/897638
+         */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+/*
+         * Hide visually and from screen readers, but maintain layout
+         */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+         * Clearfix: contain floats
+         *
+         * For modern browsers
+         * 1. The space content is one way to avoid an Opera bug when the
+         *    `contenteditable` attribute is included anywhere else in the document.
+         *    Otherwise it causes space to appear at the top and bottom of elements
+         *    that receive the `clearfix` class.
+         * 2. The use of `table` rather than `block` is only necessary if using
+         *    `:before` to contain the top-margins of child elements.
+         */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+            EXAMPLE Media Queries for Responsive Design.
+            These examples override the primary ('mobile first') styles.
+            Modify as content requires.
+            ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+            Print styles.
+            Inlined to avoid the additional HTTP request:
+            https://www.phpied.com/delay-loading-your-print-css/
+            ========================================================================== */
+
+@media print {
+
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " ("attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " ("attr(title) ")";
+    }
+
+    /*
+              * Don't show links that are fragment identifiers,
+              * or use the `javascript:` pseudo protocol
+              */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+              * Printing Tables:
+              * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+              */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+#pood_first {
+    background: #0f4c81;
+}
+
+#pood_commerce_1{
+    background: url('../img/bg_02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#pood_third {}
+
+#pood_premium {
+    background: #658dc6;
+}
+
+#pood_app {
+    background: #b5c7d3;
+}
+
+#pood_gosbi {
+    background: #84898c;
+}
+
+#pood_blackhawk {
+    background: #a58d7f;
+}
+#pood_fucoholic {
+    background: url('../img/huco_bg_home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#pood_eighth {
+    background-image: url('../img/wv_bg_home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#pood_ninth {
+    background-image: url('../img/vc_bg_home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#pood_contact {
+    background: #000;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+#header h1 {
+    font-size: 0;
+}
+
+#header h1.logo {
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.pood {
+    display: block;
+    width: 78px;
+    height: 34px;
+    margin: 18px 20px 18px 40px;
+    background: url(../img/pood_logo_w.png) 0 0 no-repeat;
+    background-size: 78px 34px;
+    text-indent: -9999px;
+    transition: all 0.3s;
+}
+
+.pood_b {
+    display: block;
+    width: 78px;
+    height: 34px;
+    margin: 18px 20px 18px 40px;
+    background: url(../img/pood_logo_b.png) 0 0 no-repeat;
+    background-size: 78px 34px;
+    text-indent: -9999px;
+    transition: all 0.3s;
+}
+
+#header {
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.3s;
+
+}
+
+#header .gnb {
+    overflow: hidden;
+    position: absolute;
+    width: calc(100% - 150px);
+    left: 120px;
+    top: 0;
+}
+
+#header .gnb ul {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    padding-right: 17px;
+    margin: 0;
+}
+
+#header .gnb ul li {
+    overflow: hidden;
+    float: left;
+}
+
+#header .gnb ul li a {
+    display: block;
+    overflow: hidden;
+    height: 72px;
+    padding: 0 15px;
+    color: #FFF;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 70px;
+    transition: all 0.3s;
+    margin-right: 12px;
+    border-bottom: 2px solid transparent;
+}
+
+
+#header .gnb ul li a:hover {
+    border-bottom: 2px solid #2d00d6;
+}
+
+#header .gnb_btn {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    width: 140px;
+    height: 44px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+#header .gnb_btn:hover {
+    background-color: #2d00d6;
+    transition: all 0.3s;
+
+}
+
+#header .gnb_btn span {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+#header .gnb_btn .number_icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: #00a2ff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    margin-left: 8px;
+    -webkit-transform: translateY(1px);
+    transform: translateY(-2px);
+}
+.container {
+    display: none;
+}
+
+#global.scrolled {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255, 255, 255, 0.72);
+    transition: background-color 300ms linear;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#global .container {
+    margin: 0 auto;
+}
+
+
+#pood_v_1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    /* in case the video doesn't fit the whole page*/
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    /*cover video background */
+    z-index: 3;
+
+
+}
+
+.pood_v_3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg_03.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 4;
+}
+
+#pood_teaser {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.ab_div_main {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 32px 32px 32px 32px;
+}
+
+
+.ab_div_main h1 {
+    font-size: 80px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    line-height: 1;
+
+}
+
+.ab_div_main h2 {
+    font-size: 16px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 0;
+    margin-bottom: 12px;
+    margin-left: 5px;
+    line-height: 1;
+}
+
+.ab_div_brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 32px 32px 42px 32px;
+}
+
+
+.ab_div_brand_line_1 {
+    position: absolute;
+    width: 517.5px;
+    height: 361px;
+    top: 50.7%;
+    left: 49.5%;
+    border: 1px solid #c0c0c0;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.ab_div_brand h1 {
+    font-size: 68px;
+    font-weight: 800;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    line-height: 1.2;
+
+}
+
+.ab_div_brand h2 {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 24px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.ab_div_next {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    z-index: 5;
+}
+
+.ab_div_next h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.ab_div_next h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 8px;
+    opacity: 0.8;
+    ;
+}
+
+.ab_div {
+    position: absolute;
+    bottom: 0%;
+    left: 200px;ㅖ햣
+    z-index: 4;
+}
+
+.brand_prd_1 {
+    width: 600px;
+}
+
+.huco_logo_1 {
+    width: 240px;
+}
+.gosbi_logo_1 {
+    width: 240px;
+}
+
+.bh_logo_1 {
+    width: 240px;
+}
+
+.iv_logo_1 {
+    width: 240px;
+}
+
+.wv_logo_1 {
+    width: 240px;
+}
+
+.ab_div h1 {
+    font-size: 70px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    line-height: 1;
+    color: #fff;
+    margin: 24px 0 0 0;
+}
+
+.ab_div h2 {
+    font-size: 22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    margin-top: 24px;
+    color: #fff;
+}
+
+a.more_btn {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 180px;
+    background-color: #000;
+    margin-top: 40px;
+    text-align: left;
+    bottom: 0;
+    padding: 16px 24px 0 24px;
+}
+
+a.more_btn img {
+    width: 20px;
+}
+
+a.more_btn img:hover {
+    fill: #000;
+}
+a.more_btn:hover:after {
+    width: 100%;
+}
+
+a.more_btn:active {
+    background-color: #fff;
+}
+
+a.more_btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+::selection {
+    color: #2d00d6;
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a.more_btn span {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+    height: 42px;
+    color: #FFF;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 42px;
+    vertical-align: top;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    transform: (-50%, -50%);
+}
+
+a.more_btn:hover span {
+    color: #1F202D;
+}
+
+a.more_btn .arrow-r {
+    width: 100%;
+    height: 70px;
+    background-image: url('../img/arrow.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    transition: color 0.3s;
+}
+
+a.more_btn .arrow-r:hover {
+    filter: grayscale(100%) brightness(0%);
+    -webkit-filter: grayscale(100%) brightness(0%);
+    -moz-filter: grayscale(100%) brightness(0%);
+    transition: color 0.3s;
+}
+
+a.more_btn .arrow-r::after {
+    content: '';
+    filter: grayscale(100%) brightness(0%);
+    -webkit-filter: grayscale(100%) brightness(0%);
+    -moz-filter: grayscale(100%) brightness(0%);
+}
+
+
+.arrow {
+    width: 38px;
+    height: 14px;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    opacity: 1;
+    z-index: 999;
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
+    -webkit-animation: bouncey 1.6s linear infinite;
+    animation: bouncey 1.6s linear infinite;
+}
+
+.arrow ul {
+    list-style: none;
+}
+
+.arrow ul li {
+    width: 24px;
+    height: 4px;
+    background: white;
+}
+
+.arrow ul li:nth-child(1) {
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 5px 0 0 5px;
+}
+
+.arrow ul li:nth-child(2) {
+    left: 14px;
+    position: absolute;
+    border-radius: 0 5px 5px 0;
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+@-webkit-keyframes bouncey {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes bouncey {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    #header .gnb ul li a {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .pood {
+        margin: 18px 20px 18px 24px;
+    }
+
+    .pood_b {
+        margin: 18px 20px 18px 24px;
+    }
+
+    .ab_div_main {
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 24px 24px 20px 24px;
+    }
+
+    .ab_div_main h1 {
+        font-size: 42px;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 800;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.9);
+        margin: 0;
+        line-height: 1;
+
+    }
+
+    .ab_div_main h2 {
+        display: none;
+    }
+
+
+    .ab_div_brand {
+        position: absolute;
+        width: calc(100% - 64px);
+        top: calc(100% - 74px);
+        left: 50%;
+        transform: translate(-50%, -90%);
+        z-index: 4;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .ab_div_brand h1 {
+        font-size: 24px;
+        font-weight: 800;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.9);
+        margin: 0;
+        line-height: 1.2;
+
+    }
+
+    .ab_div_brand h2 {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.9);
+        margin-top: 24px;
+        line-height: 1;
+    }
+
+    #pood_premium {
+        background-color: #fff !important;
+    }
+
+    #fp-nav {
+        display: none;
+    }
+}
