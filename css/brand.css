@@ -12,7 +12,7 @@
     width: 100%;
     z-index: 1;
     height: 74px;
-    background-color: #fff;
+    background-color: rgb(22, 22, 22);
     overflow: hidden;
 }
 
@@ -60,27 +60,17 @@
 }
 
 .brand_logo:focus {
-    background: url('../img/pood_logo_b.png');
-    width: 88px;
-    height: 74px;
-    background-size: 78px;
-    background-position-x: 8px;
-    background-position-y: 20px !important;
-    position: absolute;
+    background: url('../img/pood_logo_w.png');
+
 }
 
 .brand_logo:active {
-    background: url('../img/pood_logo_b.png');
-    width: 88px;
-    height: 74px;
-    background-size: 78px;
-    background-position-x: 8px;
-    background-position-y: 20px !important;
-    position: absolute;
+    background: url('../img/pood_logo_w.png');
+
 }
 
 .brand_logo:hover {
-    background: url('../img/pood_logo_b.png');
+    background: url('../img/pood_logo_w.png');
     width: 88px;
     height: 74px;
     background-size: 78px;
@@ -90,8 +80,9 @@
     position: absolute;
 
 }
+
 .brand_logo_b {
-    background: url('../img/pood_logo_b.png');
+    background: url('../img/pood_logo_w.png');
     width: 88px;
     height: 74px;
     background-size: 78px;
@@ -129,7 +120,7 @@
 }
 
 .logo_line {
-    border-left: 1px solid rgb(207, 207, 207);
+    border-left: 1px solid rgb(104, 104, 104);
     display: inline-block;
     font-size: 14px;
     height: 30px;
@@ -182,7 +173,7 @@
     overflow: hidden;
     height: 72px;
     padding: 0 15px;
-    color: #000;
+    color: #fff;
     font-family: 'Gilroy', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -193,7 +184,7 @@
 }
 
 #header_brand .gnb ul li a:hover {
-    border-bottom: 2px solid #2d00d6;
+    border-bottom: 2px solid #a3f1ff;
 }
 
 #header_brand .gnb ul li a:active {
@@ -208,7 +199,7 @@
     height: 44px;
     border: none;
     border-radius: 24px;
-    background-color: #000;
+    background-color: rgb(55, 198, 255);
     transition: all 0.3s;
     outline: none;
 }
@@ -219,7 +210,7 @@
 }
 
 #header_brand .gnb_btn:hover {
-    background-color: #2d00d6;
+    background-color: #7e5bff;
     transition: all 0.3s;
 }
 
@@ -271,7 +262,7 @@
     min-width: 100%;
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -12.2%);
+    transform: translate(-50%, -12.5%);
 }
 
 
@@ -342,7 +333,7 @@
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: .5;
+    opacity: .7;
     filter: alpha(opacity=30);
 }
 
@@ -388,6 +379,7 @@
     margin: 0;
     padding: 0;
 }
+
 .poster-line ul>li {
     display: inline-block;
     width: 11.6%;
@@ -397,15 +389,19 @@
     background-color: #00a2ff;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .poster-line ul>li:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 .poster-line ul>li:first-child {
     width: 24%;
 }
+
 .poster-line ul>li:last-child {
     margin-right: 0;
 }
+
 .popup-poster-promo-1 {
     display: inline-block;
     width: 25.5%;
@@ -495,3 +491,238 @@
     background-size: cover;
     background-position: center center;
 }
+
+
+.brand_hero {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.brand_hero.gosbi {
+    background-color: #008fbe;
+}
+
+.brand_container {
+    display: flex;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.brand_hero .hero_left {
+    float: left;
+    display: block;
+    width: 50%;
+    padding-right: 40px;
+}
+
+.brand_hero .hero_left h1 {
+    font-size: 58px;
+    font-weight: 900;
+    margin-top: 16px;
+    margin-bottom: 0;
+    letter-spacing: -0.12rem;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.brand_hero .hero_left h2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+}
+
+.brand_hero .hero_left span {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    border-radius: 2px;
+    line-height: 1.2;
+    padding: 8px 14px;
+    background-color: #000;
+    color: #fff;
+    margin-left: 4px;
+}
+
+.brand_hero .hero_left button {
+    width: 140px;
+    border: 0;
+    border-radius: 42px;
+    background: #000;
+    padding: 16px 12px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 32px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.brand_hero .hero_left button img {
+    width: 14px;
+    margin-left: 10px;
+    margin-top: -4px;
+}
+
+.brand_hero .hero_left button:hover {
+    background: #00a2ff;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.brand_hero .hero_right {
+    float: right;
+    display: block;
+    width: 50%;
+}
+
+.brand_hero .hero_right img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.brand_about .brand_container {
+    padding: 40px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.brand_about {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.header_area {
+    position: relative;
+    flex: 1 0 100%;
+}
+
+.header_area h1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.body_area {
+    position: relative;
+    flex-grow: 1;
+}
+
+.body_area.prd {
+    position: relative;
+    flex: 1 0 25%;
+}
+
+.body_area ul {
+    display: flex;
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+.body_area ul>li {
+    width: 33%;
+    margin-right: 0.5%
+}
+
+.body_area.prd ul>li {
+    width: 24.625%;
+    margin-right: 0.5%;
+}
+
+.body_area.media ul>li {
+    width: 33%;
+    margin-right: 0.5%;
+}
+
+
+.body_area.prd ul>li:hover {
+
+
+}
+
+.body_area,.body_area.prd ul>li:last-child {
+    margin-right: 0;
+}
+
+.body_area .body_area_img_1 {
+    height: 280px;
+    background-color: #2d00d6;
+}
+
+.body_area .body_area_img_2 {
+    height: 280px;
+    background-color: #352f4e;
+}
+
+.body_area .body_area_img_3 {
+    height: 280px;
+    background-color: #2e2061;
+}
+
+.body_area.prd .body_area_img_1,.body_area.prd .body_area_img_2,.body_area.prd .body_area_img_3,.body_area.prd .body_area_img_4,
+.body_area.prd .body_area_img_5,.body_area.prd .body_area_img_6,.body_area.prd .body_area_img_7,.body_area.prd .body_area_img_8,
+.body_area.prd .body_area_img_9,.body_area.prd .body_area_img_10,.body_area.prd .body_area_img_11,.body_area.prd .body_area_img_12 {
+    height: 320px;
+    background-color: #f7f6f6;
+}
+
+
+
+
+.body_area ul>li h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.body_area.prd ul>li h1 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.body_area.media ul>li h1 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.body_area ul>li h2 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 12px;
+    color: #999;
+}
+
+.body_area.prd ul>li h2 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 6px;
+    color: #999;
+}
+
+.brand_promo {
+    display: block;
+    width: 100%;
+    background: #f7f6f6;
+}
+.brand_promo h1 {
+    font-size: 42px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.brand_promo h2 {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
