@@ -1,5 +1,17 @@
+#gosbi_1 .brand_container {
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+#gosbi_2 .brand_container {
+    padding-bottom: 120px;
+}
 #header_brand h1 {
     font-size: 0;
+}
+
+#gosbi_3 .brand_container {
+    padding-top: 100px;
 }
 
 #header_brand h1.logo {
@@ -184,7 +196,7 @@
 }
 
 #header_brand .gnb ul li a:hover {
-    border-bottom: 2px solid #a3f1ff;
+    border-bottom: 2px solid #8082d3;
 }
 
 #header_brand .gnb ul li a:active {
@@ -195,13 +207,13 @@
     position: absolute;
     top: 15px;
     right: 40px;
-    width: 100px;
-    height: 44px;
+    padding: 12px 22px;
     border: none;
     border-radius: 24px;
-    background-color: rgb(55, 198, 255);
+    background-color: #4d4abf;
     transition: all 0.3s;
     outline: none;
+    font-size: 14px;
 }
 
 #header_brand .gnb_btn:active {
@@ -210,13 +222,12 @@
 }
 
 #header_brand .gnb_btn:hover {
-    background-color: #7e5bff;
+    background-color: #382c9d;
     transition: all 0.3s;
 }
 
 #header_brand .gnb_btn span {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #fff;
 }
@@ -226,7 +237,7 @@
     width: 16px;
     height: 16px;
     border-radius: 4px;
-    background-color: #00a2ff;
+    background-color: #4d4abf;
     font-size: 10px;
     font-weight: 700;
     line-height: 16px;
@@ -276,7 +287,8 @@
     z-index: 999;
     margin: 0 auto;
     background-color: #fff;
-    height: 288px;
+    min-height: 320px;
+    max-height: 320px;
 }
 
 .pop-header {
@@ -293,23 +305,16 @@
 }
 
 .pop-contns-box {
-    position: absolute;
     top: 92px;
     right: 0;
     bottom: 50px;
     left: 0;
-    height: 244px;
+    background-color: #f7f7f7;
 }
 
 .pop-contns-box .box-inner {}
 
 .pop-contns-box .box-inner .pop-box {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 244px;
     overflow: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -344,7 +349,7 @@
 .btn-layerClose {
     position: absolute;
     display: inline-block;
-    top: 15px;
+    top: 32px;
     right: 40px;
     background-size: 28px auto;
     cursor: pointer;
@@ -370,126 +375,36 @@
 
 .poster-line {
     overflow-y: hidden;
-    width: calc(100% - 80px);
-    overflow-x: hidden;
-    padding: 0 40px 40px;
+    overflow-x: auto;
+    padding: 0 32px 36px 32px;
 }
 
-.poster-line ul {
-    margin: 0;
-    padding: 0;
+.poster-line .card-main {
+    width: 19.2%;
+    float: left;
+    padding: 0 0.4%;
+    float: left;
+    padding: 0 0.4%;
+    -webkit-animation: fadeIn 0.25s forwards;
+    animation: fadeIn 0.25s forwards;
+    opacity: 0;
 }
 
-.poster-line ul>li {
-    display: inline-block;
-    width: 11.6%;
-    height: 200px;
+.poster-line a {
+    display: block;
+    position: relative;
+}
+.poster-line .card-main img {
+    width: 100%;
+    height: auto;
     border-radius: 4px;
-    margin-right: 0.4%;
-    background-color: #00a2ff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: block;
 }
 
-.poster-line ul>li:hover {
+.poster-line .card-main img:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.poster-line ul>li:first-child {
-    width: 24%;
-}
-
-.poster-line ul>li:last-child {
-    margin-right: 0;
-}
-
-.popup-poster-promo-1 {
-    display: inline-block;
-    width: 25.5%;
-    height: 200px;
-    margin-right: 0.5%;
-    background-color: #00a2ff;
-    /* background-image: url('../img/pood_phone_2.png'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.popup-poster-promo-2 {
-    display: inline-block;
-    width: 30%;
-    height: 200px;
-    margin-right: 0.5%;
-    background-image: url('../img/pood_phone_2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-
-.popup-poster-card-1 {
-    display: inline-block;
-    width: 11.5%;
-    height: 200px;
-    margin-right: 0.5%;
-    background-image: url('../img/pood_phone_2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.popup-poster-card-2 {
-    display: inline-block;
-    width: 11.5%;
-    height: 200px;
-    margin-right: 0.5%;
-    background-image: url('../img/pood_phone_2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.popup-poster-card-3 {
-    display: inline-block;
-    width: 11.5%;
-    height: 200px;
-    margin-right: 0.5%;
-    ;
-    background-image: url('../img/pood_phone_2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.popup-poster-card-4 {
-    display: inline-block;
-    width: 11.5%;
-    height: 200px;
-    margin-right: 0.5%;
-    background-image: url('../img/pood_phone_2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.popup-poster-card-5 {
-    display: inline-block;
-    width: 11.5%;
-    height: 200px;
-    margin-right: 0.5%;
-    background-image: url('../img/pood_phone_2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.popup-poster-card-6 {
-    display: inline-block;
-    width: 11.5%;
-    height: 200px;
-    background-image: url('../img/pood_phone_2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 
@@ -501,14 +416,17 @@
 }
 
 .brand_hero.gosbi {
-    background: #000;
+    background-color: #f5f9fd;
+    /* background: url('../img/86373.jpg');
+    background-size: cover;
+    background-position: center; */
 }
 
 
 .brand_container {
     max-width: 1366px;
     margin: 0 auto;
-    padding: 120px 0;
+    padding: 100px 0;
 }
 
 .brand_logo_container {
@@ -522,9 +440,8 @@
 
 .brand_prd_container {
     width: 100%;
-    margin-top: 62px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
 }
 .brand_prd_container img {
     width: 600px;
@@ -537,14 +454,14 @@
 }
 
 .brand_hero .hero_left h1 {
-    font-size: 48px;
-    font-weight: 800;
+    font-size: 24px;
+    font-weight: 400;
     margin-bottom: 0;
-    letter-spacing: -0.12rem;
+    letter-spacing: -0.02rem;
     line-height: 1.3;
-    color: #fff;
+    color: #000;
     text-align: center;
-    
+    margin-top: 24px;
 }
 
 .brand_hero .hero_left h2 {
@@ -602,7 +519,7 @@
 }
 
 .brand_about .brand_container {
-    padding: 40px 0;
+    padding: 80px 0;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -675,45 +592,230 @@
 
 .body_area .body_area_main_img_1 {
     width: 100%;
-    height: 420px;
-    background: url(../img/gosbi_bg_brand.jpg);
-    background-position: center;
+    height: 300px;
+    background: url(../img/gosbi_food.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.body_area .body_area_main_img_1 h1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    padding: 36px 0 0 48px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.body_area .body_area_main_img_1 h2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    padding: 0 0 0 48px;
+    margin: -10px 0 0 0;
+}
+
+.body_area .body_area_main_img_1 h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 0 0 48px;
+    margin: 12px 0 0 0;
+}
+
 
 .body_area .body_area_main_img_2 {
     width: 100%;
-    height: 420px;
-    background: url(../img/gosbi_bg_brand.jpg);
-    background-position: center;
+    height: 520px;
+    background: url(../img/gosbi_food_2.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.body_area .body_area_main_img_4 {
+    float: left;
+    width: 49.5%;
+    height: 600px;
+    background: url(../img/gosbi_bg_00.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-right: 1%;
+}
+.body_area .body_area_main_img_5 {
+    width: 49.5%;
+    height: 600px;
+    background: url(../img/gosbi_bg_00.jpg);
+    background-size: cover;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.body_area .body_area_main_img_6 {
+    width: 100%;
+    height: 380px;
+    margin-bottom: 1%;
 }
 
 
-.body_area .body_area_img_1 {
+.body_area .body_area_main_img_2 .brand_2_img_box {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.body_area .body_area_main_img_2 .brand_2_img_box img {
+    overflow: hidden;
+    width: 400px;
+}
+.body_area .body_area_main_img_2 .brand_2_text_box {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#gosbi_2 .header_title h1, #gosbi_1 .header_title h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 24px;
+    color: #000;
+    margin-bottom: 32px;
+}
+
+#gosbi_2 .header_title h2, #gosbi_1 .header_title h2 {
+    width: 45%;
+    font-size: 20px;
+    font-weight: 400;
+    border: 0;
+    padding: 0;
+    margin-top: -24px;
+    margin-bottom: 32px;
+    color: #999;
+}
+#gosbi_2 .header_title h3 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #999;
+}
+#gosbi_science .header_title h1 {
+    font-size: 26px;
+    font-weight: 800;
+}
+#gosbi_science .header_title h2 {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+#gosbi_10 .brand_container {
+    padding-bottom: 0;
+}
+
+.body_area .body_area_main_img_2 .brand_2_text_box h1{
+    font-size: 42px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+}
+.body_area .body_area_main_img_2 .brand_2_text_box h2 {
+    font-size: 42px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+}
+
+.body_area .body_area_main_img_2 .brand_2_text_box h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin: 12px 0 0 0;
+}
+
+
+.body_area .body_area_img_1, .body_area_img_2 {
     height: 280px;
-    background-color: #2d00d6;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.body_area .body_area_img_1  img, .body_area_img_2 img,  .body_area_img_3 img,.body_area_img_4 img,
+.body_area_img_5 img, .body_area_img_6 img, .body_area_img_7 img, .body_area_img_8 img, .body_area_img_9 img,
+.body_area_img_10 img, .body_area_img_11 img{
+    padding: 10% 0 10% 0;
+    height: 80%;
+}
 .body_area .body_area_img_2 {
-    height: 280px;
+
     background-color: #352f4e;
 }
 
 .body_area .body_area_img_3 {
-    height: 280px;
+
     background-color: #2e2061;
 }
 
 .body_area.prd .body_area_img_1,.body_area.prd .body_area_img_2,.body_area.prd .body_area_img_3,.body_area.prd .body_area_img_4,
 .body_area.prd .body_area_img_5,.body_area.prd .body_area_img_6,.body_area.prd .body_area_img_7,.body_area.prd .body_area_img_8,
 .body_area.prd .body_area_img_9,.body_area.prd .body_area_img_10,.body_area.prd .body_area_img_11,.body_area.prd .body_area_img_12 {
-    height: 320px;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
     background-color: #f7f6f6;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.body_area.prd .body_area_img_1:hover,.body_area.prd .body_area_img_2:hover,.body_area.prd .body_area_img_3:hover,.body_area.prd .body_area_img_4:hover,
+.body_area.prd .body_area_img_5:hover,.body_area.prd .body_area_img_6:hover,.body_area.prd .body_area_img_7:hover,.body_area.prd .body_area_img_8:hover,
+.body_area.prd .body_area_img_9:hover,.body_area.prd .body_area_img_10:hover,.body_area.prd .body_area_img_11:hover,.body_area.prd .body_area_img_12:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
 
+.feature_img {
+    width: 100% !important;
+    height: 100% !important; 
+    padding: 0 !important;
+}
 
+.body_area .body_area_main_img_3 {
+    width: 100%;
+    background-color: #fff;
+}
+
+.body_area .body_area_main_img_3 h1 {
+    font-size: 62px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.body_area .body_area_main_img_3 h2 {
+    font-size: 62px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 42px 0;
+}
+
+.body_area .body_area_main_img_3 .brand_3_img_box {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.body_area .body_area_main_img_3 .brand_3_img_box img {
+    width: 100%;
+    text-align: center;
+}
 
 .body_area ul>li h1 {
     font-size: 20px;
@@ -749,19 +851,76 @@
 
 .brand_promo {
     display: block;
-    width: 100%;
     background: #f7f6f6;
+    padding: 42px;
+    text-align: center;
+}
+.brand_promo img {
+    width: 62px;
 }
 .brand_promo h1 {
+    font-family: 'Gilroy', sans-serif;
     font-size: 42px;
-    font-weight: 900;
+    font-weight: 600;
     text-align: center;
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 0;
 }
 
 .brand_promo h2 {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
+    margin-top: 0px;
+}
+
+.brand_promo button {
+    font-size: 16px;
+    font-weight: 400;
+    background: #4d4abf;
+    color: #fff;
+    padding: 12px 32px;
+    border: 0;
+    border-radius: 44px;
+    margin-top: 16px;
+    transition: all 0.2s;
+}
+
+.brand_promo button:hover {
+    background: #29276e;
+    transition: all 0.2s;
 }
 
 
+.brand_footer {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.brand_footer ul {
+    padding: 0;
+}
+
+.brand_footer .pood_company {
+    padding-left: 0 !important;
+}
+
+
+.gosbi_1_text_box {
+    padding: 32px 0 0 46px;
+}
+
+.gosbi_1_text_box h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+}
+
+.gosbi_1_text_box h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+}
