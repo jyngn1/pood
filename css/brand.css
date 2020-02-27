@@ -2,6 +2,9 @@
     padding-top: 100px;
 }
 
+#pood-01 .brand_3_img_box {
+    text-align: center;
+}
 #pood-02 .brand_container {
     padding-bottom: 120px;
 }
@@ -25,13 +28,15 @@
     color: #007bab;
 }
 
-#pood-09  .body_area_main_img_1 {
-    background: url('../img/bh_farm.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+#pood-09  .body_area_main_img_1.bh {
+    background-image: url('../img/bh_farm.png');
 }
+
+#pood-09  .body_area_main_img_1.gosbi {
+    background-image: url('../img/gosbi_bg_brand.jpg');
+}
+
+
 #pood-10 .brand_container {
     padding-top: 0;
 }
@@ -57,6 +62,7 @@
 
 .brand_logo_box {
     display: inline-block;
+    height: 74px;
 }
 
 .brand_logo_bar {
@@ -65,6 +71,7 @@
 
 .brand_logo_bar {
     display: inline-block;
+    height: 74px;
 }
 
 .pood_brand_logo {
@@ -185,48 +192,47 @@
     transition: all 0.3s;
 }
 
-#header_brand .gnb {
-    overflow: hidden;
+#brandnav {
     position: absolute;
-    width: auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    right: 40px;
+    overflow: hidden;
+    display: inline-block;
+    height: 74px;
 }
 
-#header_brand .gnb ul {
+#brandnav ul {
     overflow: hidden;
-    float: left;
-    position: relative;
-    padding-right: 17px;
-    margin: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+    height: 74px;
 }
 
-#header_brand .gnb ul li {
+#brandnav ul li {
     overflow: hidden;
-    float: left;
+    display: inline-block;
+    text-align: center;
+    height: 74px;
 }
 
-#header_brand .gnb ul li a {
-    display: block;
+
+#brandnav ul li a {
+    display: inline-block;
     overflow: hidden;
-    height: 72px;
-    padding: 0 15px;
     color: #fff;
     font-family: 'Gilroy', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    line-height: 73px;
     transition: all 0.3s;
-    margin-right: 12px;
-    border-bottom: 2px solid transparent;
+    padding: 0 20px;
+    line-height: 74px;
 }
 
-#header_brand .gnb ul li a:hover {
-    border-bottom: 2px solid #8082d3;
+#brandnav ul li a:hover {
+    color: #4d4abf;
 }
 
-#header_brand .gnb ul li a:active {
+#brandnav ul li a:active {
     color: #000;
 }
 
@@ -957,4 +963,10 @@
 
 .bh_point {
     color: #1c853f !important;
+}
+
+.bh_main_img {
+    width: auto !important;
+    height: 700px;
+    text-align: center;
 }
