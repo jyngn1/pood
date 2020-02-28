@@ -1,3 +1,8 @@
+#pood-01{
+    margin-top: 68px;
+}
+
+
 #pood-01 .brand_container {
     padding-top: 100px;
 }
@@ -6,6 +11,7 @@
     text-align: center;
 }
 #pood-02 .brand_container {
+    padding-top: 0;
     padding-bottom: 120px;
 }
 
@@ -33,7 +39,7 @@
 }
 
 #pood-09  .body_area_main_img_1.gosbi {
-    background-image: url('../img/gosbi_bg_brand.jpg');
+    background-image: url('../img/gosbi_food.jpg');
 }
 
 
@@ -52,7 +58,7 @@
 }
 
 .logo_box {
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 1;
     height: 74px;
@@ -61,26 +67,13 @@
 }
 
 .brand_logo_box {
-    display: inline-block;
+    display: none;
     height: 74px;
 }
 
 .brand_logo_bar {
     display: inline-block;
-}
-
-.brand_logo_bar {
-    display: inline-block;
     height: 74px;
-}
-
-.pood_brand_logo {
-    display: inline-block;
-    width: 88px;
-    height: 74px;
-    margin: 0px 20px 0px 40px;
-    transition: all 0.3s;
-    text-align: center;
 }
 
 .pood_brand_logo {
@@ -90,7 +83,10 @@
     margin-left: 32px;
     width: 88px;
     text-align: center;
+    margin: 0px 20px 0px 40px;
+    transition: all 0.3s;
 }
+
 
 .brand_logo {
     background: url('../img/pood_logo_sb.png');
@@ -156,7 +152,7 @@
     display: inline-block;
     width: auto;
     height: 28px;
-    margin-left: 24px;
+    margin-left: 40px;
     transition: all 0.3s;
 
 }
@@ -167,7 +163,7 @@
 
 .logo_line {
     border-left: 1px solid rgb(104, 104, 104);
-    display: inline-block;
+    display: none;
     font-size: 14px;
     height: 30px;
     margin-left: 0.25em;
@@ -333,7 +329,7 @@
 .pop-header .title {
     font-family: 'Gilroy', sans-serif;
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 400;
     color: #000;
 }
 
@@ -603,6 +599,10 @@
     margin-right: 0.5%
 }
 
+.body_area ul>li:last-child {
+    margin-right: 0;
+}
+
 .body_area.prd ul>li {
     width: 24.625%;
     margin-right: 0.5%;
@@ -663,12 +663,28 @@
 
 .body_area .body_area_main_img_2 {
     width: 100%;
-    height: 520px;
-    background: url(../img/gosbi_food_2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.body_area .body_area_main_img_2.gosbi {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gosbi_bg_03 {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.body_area .body_area_main_img_2.bh {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.bh_bg_03 {
+    width: 100%;
     overflow: hidden;
 }
 
@@ -697,6 +713,7 @@
     width: 100%;
     height: 380px;
     margin-bottom: 1%;
+    overflow: hidden;
 }
 
 
@@ -722,7 +739,7 @@
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 0;
-    margin-top: 24px;
+    margin-top: 0;
     color: #000;
     margin-bottom: 32px;
 }
@@ -755,6 +772,9 @@
     padding-bottom: 0;
 }
 
+.open_brand_btn {
+    display: none;
+}
 .body_area .body_area_main_img_2 .brand_2_text_box h1{
     font-size: 42px;
     font-weight: 900;
@@ -776,7 +796,7 @@
 }
 
 
-.body_area .body_area_img_1, .body_area_img_2 {
+.body_area_img_1, .body_area_img_2, .body_area_img_3 {
     height: 280px;
     overflow: hidden;
     text-align: center;
@@ -786,8 +806,9 @@
 .body_area .body_area_img_1  img, .body_area_img_2 img,  .body_area_img_3 img,.body_area_img_4 img,
 .body_area_img_5 img, .body_area_img_6 img, .body_area_img_7 img, .body_area_img_8 img, .body_area_img_9 img,
 .body_area_img_10 img, .body_area_img_11 img{
-    padding: 10% 0 10% 0;
-    height: 80%;
+    padding: 20px 0;
+    height: 260px;
+    width: auto;
 }
 .body_area .body_area_img_2 {
 
@@ -969,4 +990,8 @@
     width: auto !important;
     height: 700px;
     text-align: center;
+}
+
+.header {
+    display: none;
 }
