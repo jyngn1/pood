@@ -4,23 +4,19 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap');
 
 html {
+    height: 100%;
+}
+
+body {
     color: #222;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1em;
     line-height: 1.4;
-    overflow: hidden;
-
-    scroll-behavior: auto;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    overflow-x: hidden;
-}
-
-a {
+a, li {
     text-decoration: none;
     outline: none;
 }
@@ -31,6 +27,7 @@ a:visited {
     color: #000;
     text-decoration: none;
 }
+
 
 ul,
 ol,
@@ -46,275 +43,7 @@ li {
     display: inline;
 }
 
-
-/*
-             * Remove text-shadow in selection highlight:
-             * https://twitter.com/miketaylr/status/12228805301
-             *
-             * Vendor-prefixed and regular ::selection selectors cannot be combined:
-             * https://stackoverflow.com/a/16982510/7133471
-             *
-             * Customize the background color to match your design.
-             */
-
-::-moz-selection {
-    text-shadow: none;
-}
-
-::selection {
-    text-shadow: none;
-}
-
-
-/*
-             * A better looking default horizontal rule
-             */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-
-/*
-             * Remove the gap between audio, canvas, iframes,
-             * images, videos and the bottom of their containers:
-             * https://github.com/h5bp/html5-boilerplate/issues/440
-             */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-
-/*
-             * Remove default fieldset styles.
-             */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-
-/*
-             * Allow only vertical resizing of textareas.
-             */
-
-textarea {
-    resize: vertical;
-}
-
-
-/* ==========================================================================
-               Browser Upgrade Prompt
-               ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-/* ==========================================================================
-               Author's custom styles
-               ========================================================================== */
-
-
-/* ==========================================================================
-               Helper classes
-               ========================================================================== */
-
-
-/*
-             * Hide visually and from screen readers
-             */
-
-.hidden {
-    display: none !important;
-}
-
-
-/*
-            * Hide only visually, but have it available for screen readers:
-            * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-            *
-            * 1. For long content, line feeds are not interpreted as spaces and small width
-            *    causes content to wrap 1 word per line:
-            *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-            */
-
-.sr-only {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    /* 1 */
-}
-
-
-/*
-            * Extends the .sr-only class to allow the element
-            * to be focusable when navigated to via the keyboard:
-            * https://www.drupal.org/node/897638
-            */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    white-space: inherit;
-    width: auto;
-}
-
-
-/*
-            * Hide visually and from screen readers, but maintain layout
-            */
-
-.invisible {
-    visibility: hidden;
-}
-
-
-/*
-            * Clearfix: contain floats
-            *
-            * For modern browsers
-            * 1. The space content is one way to avoid an Opera bug when the
-            *    `contenteditable` attribute is included anywhere else in the document.
-            *    Otherwise it causes space to appear at the top and bottom of elements
-            *    that receive the `clearfix` class.
-            * 2. The use of `table` rather than `block` is only necessary if using
-            *    `:before` to contain the top-margins of child elements.
-            */
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-
-/* ==========================================================================
-               EXAMPLE Media Queries for Responsive Design.
-               These examples override the primary ('mobile first') styles.
-               Modify as content requires.
-               ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-
-/* ==========================================================================
-               Print styles.
-               Inlined to avoid the additional HTTP request:
-               https://www.phpied.com/delay-loading-your-print-css/
-               ========================================================================== */
-
-@media print {
-
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " ("attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " ("attr(title) ")";
-    }
-
-    /*
-                 * Don't show links that are fragment identifiers,
-                 * or use the `javascript:` pseudo protocol
-                 */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-                 * Printing Tables:
-                 * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-                 */
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+body.noscroll { overflow: hidden; }
 
 #pood_first {
     background: #0f4c81;
@@ -401,7 +130,7 @@ textarea {
     width: 78px;
     height: 34px;
     margin: 18px 20px 18px 40px;
-    background: url(../img/pood_logo_w.png) 0 0 no-repeat;
+    background: url(../img/pood_logo_b.png) 0 0 no-repeat;
     background-size: 78px 34px;
     text-indent: -9999px;
     transition: all 0.3s;
@@ -419,15 +148,14 @@ textarea {
 }
 
 #header {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 1);
     transition: all 0.3s;
 }
 
 #header .gnb {
     overflow: hidden;
     position: absolute;
-    width: calc(100% - 150px);
-    left: 120px;
+    right: 3px;
     top: 0;
 }
 
@@ -435,32 +163,30 @@ textarea {
     overflow: hidden;
     float: left;
     position: relative;
-    padding-right: 17px;
     margin: 0;
 }
 
 #header .gnb ul li {
-    overflow: hidden;
     float: left;
-}
-
-#header .gnb ul li a {
-    display: block;
     overflow: hidden;
     height: 72px;
-    padding: 0 15px;
+    padding: 0 12px;
     color: #FFF;
     font-family: 'Gilroy', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 70px;
     transition: all 0.3s;
-    margin-right: 12px;
+    margin-right: 6px;
     border-bottom: 2px solid transparent;
 }
 
-#header .gnb ul li a:hover {
-    border-bottom: 2px solid #2d00d6;
+#header .gnb ul li a {
+    color: #000;
+}
+
+#header .gnb ul li:hover {
+    border-bottom: 2px solid #4d4abf;
 }
 
 #header .gnb ul li a:active {
@@ -990,84 +716,3 @@ footer h2 {
     }
 }
 
-@media only screen and (max-width: 1440px) {
-    #header .gnb ul li a {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .container {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .pood {
-        margin: 18px 20px 18px 24px;
-    }
-
-    .pood_b {
-        margin: 18px 20px 18px 24px;
-    }
-
-    .ab_div_main {
-        width: 60%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 4;
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 24px 24px 20px 24px;
-    }
-
-    .ab_div_main h1 {
-        font-size: 42px;
-        font-family: 'Gilroy', sans-serif;
-        font-weight: 800;
-        text-align: left;
-        color: rgba(0, 0, 0, 0.9);
-        margin: 0;
-        line-height: 1;
-    }
-
-    .ab_div_main h2 {
-        display: none;
-    }
-
-    .ab_div_brand {
-        position: absolute;
-        width: calc(100% - 64px);
-        top: calc(100% - 74px);
-        left: 50%;
-        transform: translate(-50%, -90%);
-        z-index: 4;
-        background-color: transparent;
-        padding: 0;
-    }
-
-    .ab_div_brand h1 {
-        font-size: 24px;
-        font-weight: 800;
-        text-align: left;
-        color: rgba(0, 0, 0, 0.9);
-        margin: 0;
-        line-height: 1.2;
-    }
-
-    .ab_div_brand h2 {
-        font-size: 24px;
-        font-weight: 300;
-        text-align: left;
-        color: rgba(0, 0, 0, 0.9);
-        margin-top: 24px;
-        line-height: 1;
-    }
-
-    #pood_premium {
-        background-color: #fff !important;
-    }
-
-    #fp-nav {
-        display: none;
-    }
-}
