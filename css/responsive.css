@@ -10,56 +10,181 @@
         display: none;
     }
 
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) { 
-    .brand_container, .brand_footer {
-        max-width: 90%;
-        margin: 0 auto;
+    h1.t1 {
+        font-size: 32px;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
     }
-    .body_area .body_area_img_1  img, .body_area_img_2 img,  .body_area_img_3 img,.body_area_img_4 img,
-.body_area_img_5 img, .body_area_img_6 img, .body_area_img_7 img, .body_area_img_8 img, .body_area_img_9 img,
-.body_area_img_10 img, .body_area_img_11 img{
-    padding: 35px 0;
-    height: 230px;
-    width: auto;
-}
+    h1.t2 {
+        font-size: 24px;
+        font-weight: 900;
+        text-align: left;
+        line-height: 1.25;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    h1.t3 {
+        font-family: 'Gilroy', sans-serif;
+        margin-bottom: 12px;
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-align: center;
+        margin-top: 0;
+    }
+    h1.t4 {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.25;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    h1.t5 {
+        font-family: 'Gilroy', sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+    }
+    h1.t6 {
+        color: rgb(27, 27, 27);
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+    h2.t1 {
+        font-size: 16px;
+        font-weight: 300;
+        color: rgb(114, 114, 114);
+        margin-bottom: 42px;
+    }
+    h2.t2 {
+        font-size: 16px;
+        font-weight: 300;
+        color: rgb(114, 114, 114);
+        text-align: center;
+        margin-bottom: 0;
+    }
+    h2.t3 {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(160, 160, 160);
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+    span.fw800 {
+        font-weight: 800;
+    }
+    span.gosbi {
+        color: #007bab;
+    }
 
+    #pood-01 {
+        margin-top: 0px;
+    }
 
- }
-
-/* main - gosbi.co.kr */
-@media only screen and (max-width: 1024px) {
     #pood-01 .brand_container {
-        padding-top: 16px;
+        padding-top: 32px;
+        padding-bottom: 0px;
     }
-
     #pood-02 .brand_container {
         padding-top: 0;
         padding-left: 24px;
         padding-right: 24px;
-        padding-bottom: 60px;
+        padding-bottom: 0;
     }
 
     #pood-03 .brand_container {
         padding-top: 0;
         padding-left: 24px;
         padding-right: 24px;
-        padding-bottom: 60px;
+        padding-bottom: 0;
     }
-
     #pood-04 .brand_container {
-        padding: 60px 0;
+        padding: 80px 0 60px 0;
+    }
+    #pood-05 .header_area {
+        margin-bottom: 42px;
+    }
+    #pood-05 .brand_container {
+        padding: 42px 24px 24px 24px;
+        margin-bottom: 0;
+    }
+    #pood-10.brand_about {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .brand_container,
+    .brand_footer {
+        max-width: 980px;
+        margin: 0 auto;
     }
 
-    #pood-05 .brand_container,
+    .body_area .body_area_img_1 img,
+    .body_area_img_2 img,
+    .body_area_img_3 img,
+    .body_area_img_4 img,
+    .body_area_img_5 img,
+    .body_area_img_6 img,
+    .body_area_img_7 img,
+    .body_area_img_8 img,
+    .body_area_img_9 img,
+    .body_area_img_10 img,
+    .body_area_img_11 img {
+        padding: 35px 0;
+        height: 230px;
+        width: auto;
+    }
+
+    
+    
+
+    .logo_box {
+        max-width: 980px;
+    }
+
+
+}
+
+/* main - brand */
+@media only screen and (max-width: 1024px) {
+    html {
+        height: 100vh;
+        min-height: -webkit-fill-available;
+    }
+    .brand_about {
+        padding-top: 70px;
+    }
+    .feature_img {
+        margin-top: 24px;
+        padding: 0;
+    }
+    .feature_img img {
+        width: 100%;
+    }
+    .brand_promo button {
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .brand_promo img {
+        width: 42px;
+    }
+
+
+
+
+
     #pood-06 .brand_container,
     #pood-07 .brand_container,
     #pood-08 .brand_container {
         padding-top: 0;
         padding-left: 24px;
         padding-right: 24px;
-        padding-bottom: 60px;
+        padding-bottom: 0;
     }
 
     #pood-09 .brand_container {
@@ -69,6 +194,12 @@
 
     #pood-10 .brand_container {
         padding-bottom: 24px;
+    }
+    .body_area .body_area_main_img_3 .brand_3_img_box img {
+        margin-top: 24px;
+    }
+    .pop-header img {
+        display: block;
     }
     .open_brand_mobile {
         position: relative;
@@ -84,10 +215,12 @@
         transform: rotate(0deg);
         transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     }
+
     .open_brand_mobile img {
         width: 20px;
         padding: 24px 18px 24px 0;
     }
+
     .brand_footer {
         padding-top: 0;
         padding-left: 24px;
@@ -111,9 +244,6 @@
         margin-top: 0;
     }
 
-    .body_area ul>li h1 {
-        font-size: 18px;
-    }
 
     .body_area ul>li h2 {
         margin-top: 4px;
@@ -123,12 +253,9 @@
         width: 100%;
     }
 
-    .feature_img {
-        height: auto !important;
-    }
-
     .body_area .body_area_img_1,
-    .body_area_img_2, .body_area_img_3 {
+    .body_area_img_2,
+    .body_area_img_3 {
         height: auto;
     }
 
@@ -148,7 +275,7 @@
 
     .brand_logo_box_2 {
         position: absolute;
-        top: 34px;
+        top: 37px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -174,8 +301,7 @@
     }
 
     .body_area .body_area_main_img_3 h1 {
-        font-size: 32px;
-        margin-top: 24px;
+
     }
 
     .body_area .body_area_main_img_3 h2 {
@@ -219,24 +345,34 @@
 
     #pood-03 .header_title h1,
     #pood-02 .header_title h1 {
-        font-size: 22px;
-        font-weight: 700;
+
     }
 
     #pood-03 .header_title h2,
     #pood-02 .header_title h2 {
-        width: 100%;
-        font-size: 16px;
+
     }
 
     #brandnav {
         display: none;
     }
+
     .body_area .body_area_main_img_2.bh {
         width: 100%;
         height: auto;
     }
-    .body_area .body_area_img_1 img, .body_area_img_2 img, .body_area_img_3 img, .body_area_img_4 img, .body_area_img_5 img, .body_area_img_6 img, .body_area_img_7 img, .body_area_img_8 img, .body_area_img_9 img, .body_area_img_10 img, .body_area_img_11 img {
+
+    .body_area .body_area_img_1 img,
+    .body_area_img_2 img,
+    .body_area_img_3 img,
+    .body_area_img_4 img,
+    .body_area_img_5 img,
+    .body_area_img_6 img,
+    .body_area_img_7 img,
+    .body_area_img_8 img,
+    .body_area_img_9 img,
+    .body_area_img_10 img,
+    .body_area_img_11 img {
         padding: 30px 0;
         height: 240px;
         margin: 0 auto;
@@ -246,14 +382,17 @@
     .body_area_main_img_5 img {
         width: 100%;
     }
+
     .bh_main_img {
         height: 360px;
     }
+
     .body_area.media ul>li {
         width: 100%;
     }
+
     .brand_promo h1 {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .brand_promo h2 {
@@ -284,6 +423,7 @@
     .brand_logo_bar {
         display: none;
     }
+
     .container .header {
         position: absolute;
         display: block;
@@ -328,19 +468,19 @@
     /* Menu Header */
     .header {
         display: block;
-        background: rgba(0, 0, 0, 0.9);
         overflow: hidden;
         height: 68px;
         width: 100%;
-        z-index: 1;
+        z-index: 999;
         position: fixed;
-        transition: all 0.4s ease-out, background 1s ease-out;
+        transition: all 0.3s ease-out, background 1s ease-out;
     }
 
     .header.menu-open {
-        height: 100%;
+        height: 100vh;
         background: #111;
-        transition: all 0.45s ease-out, background 0.8s ease-out;
+        transition: all 0.35s ease-out, background 0.8s ease-out;
+        z-index: 999;
     }
 
     /* Menu List items */
@@ -501,6 +641,12 @@
         transform: translateY(3px) rotate(-45deg);
     }
 
+    .dim-layer .pop-layer {
+        overflow-y: scroll;
+    }
+    .dim-layer {
+        z-index: 100;
+    }
     .pop-layer {
         display: none;
         width: 75%;
@@ -515,33 +661,64 @@
         min-height: 100vh;
         animation: slideInFromLeft 0.3s forwards;
         pointer-events: all;
+        -webkit-box-shadow: -31px 12px 55px -20px rgba(0,0,0,0.35);
+        -moz-box-shadow: -31px 12px 55px -20px rgba(0,0,0,0.35);
+        box-shadow: -31px 12px 55px -20px rgba(0,0,0,0.35);
+    }
+    .pop-contns-box {
+        top: 92px;
+        right: 0;
+        bottom: 50px;
+        left: 0;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 12px 55px -20px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 12px 55px -20px rgba(0,0,0,0.0);
+        box-shadow: 0px 12px 55px -20px rgba(0,0,0,0.0);
     }
     .dim-layer .dimBg {
-        position: absolute;
-        top:0;
+        position: fixed;
+        top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
         background: #000;
-        opacity: .8;
+        opacity: .15;
+        height: 100vh;
+        min-height: -webkit-fill-available;
     }
 
     .pop-header {
-        padding: 18px 20px;
+        padding: 20px 20px 18px 20px;
         background: #fff;
         border-bottom: 1px solid #f1f1f1;
     }
-    .pop-header .title img{
-        width: 84px;
+ 
+    .pop-header .title img {
+        width: 68px;
     }
+
     .btn-layerClose {
-        top: 26px;
-        right: 16px;
+        position: absolute;
+        display: inline-block;
+        top: 23px;
+        right: 20px;
+        background-size: 28px auto;
+        cursor: pointer;
+    }
+
+    .poster-header {
+        padding: 0 20px;
+    }
+
+    .poster-header h1 {
+        font-weight: 400;
+        font-size: 22px;
+        padding: 14px 0;
+        color: #111;
     }
 
     .poster-line {
         height: 100%;
-        padding: 20px 16px 36px 16px
+        padding: 0px 16px 36px 16px
     }
 
     .pop-con {
@@ -558,3 +735,7 @@
         opacity: 0;
     }
 }
+
+/* index */
+
+@media only screen and (max-width: 1024px) {}
