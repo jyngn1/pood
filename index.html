@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>푸드, 펫푸드 커머스</title>
+    <title>프리미엄 펫푸드, 푸드</title>
     <meta name="author" content="GNONE" />
     <meta name="description" content="반려동물 입장에서 생각한 프리미엄 커머스" />
     <meta name="keywords" content="펫푸드,사료,고스비,블랙호크,웨루바,아이보리코트,사료,반려견,반려동물,푸드,pood,애견사료.후코홀릭" />
@@ -18,6 +18,8 @@
         href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
     <link rel="stylesheet" href="css/normalize. css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/animate.css">
 
@@ -26,38 +28,75 @@
 
 <body>
     <div id="header">
-        <h1 class="logo">
-            <a href="#" class="pood">pood</a>
-        </h1>
-        <div class="gnb">
-            <ul>
-                <li><a href="#pood_commerce_1">Commerce</a></li>
-                <li><a href="#pood_fucoholic">Huco holic</a></li>
-                <li><a href="#pood_gosbi">Gosbi</a></li>
-                <li><a href="#pood_blackhawk">BlackHawk</a></li>
-                <li><a href="#pood_ivorycoat">IvoryCoat</a></li>
-                <li><a href="#pood_weruva">Weruva</a></li>
-                <li><a href="#pood_vetocanis">Vetocanis</a></li>
-            </ul>
+        <div class="logo_box">
+            <div class="pood-nav">
+                <h1 class="logo">
+                    <a href="#" class="pood">pood</a>
+                </h1>
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#pood_commerce_1">What is pood</a></li>
+                        <li><a href="#pood_fucoholic">pood Vision</a></li>
+                        <li><a href="#pood_gosbi">Our Brand</a></li>
+                        <li><a href="#pood_blackhawk">Recruit</a></li>
+                        <li><a href="#pood_ivorycoat">Contact</a></li>
+                        <li><a href="#pood_vetocanis">Recruit<span class="number_icon">2</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header">
+                <div class="icon-container">
+                    <div id="menuicon">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                    </div>
+                </div>
+                <span class="brand_logo_box_2">
+                    <a href="http://gosbi.co.kr" class="brand_logo_2">
+                        <img src="img/pood_logo_w.png">
+                    </a>
+                </span>
+                <a href="#open_brand_mobile" class="mobile_more_popup brand_popup_close">
+                    <div id="" class="open_brand_mobile">
+                        <img src="img/morebtn.svg">
+                    </div>
+                </a>
+                <div class="mobile-menu">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#pood-05" class="mobile-menu">Why Gosbi</a>
+                        </li>
+                        <li class="menu-item"><a href="#pood-06" class="mobile-menu">Exclusive Dog</a>
+                        </li>
+                        <li class="menu-item"><a href="#pood-07" class="mobile-menu">Fresko Cat</a>
+                        </li>
+                        <li class="menu-item"><a href="#pood-08" class="mobile-menu">Media</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <a href="#pood_recruit">
+        <!-- <a href="#pood_recruit">
             <button class="gnb_btn">
                 <span>푸드 채용정보</span><span class="number_icon">3</span>
             </button>
-        </a>
+        </a> -->
     </div>
     <div id="fullpage">
         <div class="section" id="pood_main">
-            <div class="ab_div_main">
-                <h2>pood : Premium pet food integrity brand</h2>
-                <h1>OUR LIVES<br>WILL BE<br>HAPPIER</h1>
+            <div class="pood-container">
+                <div class="ab_div_main">
+                    <p>평범한 일상들이</p>
+                    <p>더욱 소중하기 때문에</p>
+                    <span>푸드는 우리와 반려동물과의 ~~하는 통합 브랜드입니다.</span>
+                </div>
+                <div class="arrow">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
-            <div class="arrow">
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+
             <video id="pood_v_1" loop muted data-autoplay>
                 <source src="img/pood_hl.mp4" type="video/mp4">
             </video>
@@ -283,14 +322,7 @@
             </footer>
         </div>
     </div>
-
-
-    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/fullpage.js"></script>
@@ -305,24 +337,25 @@
             ],
             // navigation: true,
             // navigationPosition: 'right',
-            // navigationTooltips: ['pood', '1d', '2', 'Gosbi', 'BlackHawk', 'IvoryCoat', 'Weruva', 'd', '8', '9']
+             navigationTooltips: ['What is pood', 'pood Vision', 'Our brand', 'Fucoholic', 'Gosbi', 'BlackHawk', 'IvoryCoat', 'Weruva', 'Vetocanis', 'Recruit', 'Contact']
         });
     </script>
 </body>
-</div>
 
 </html>
 
 <script>
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
-            $(".pood").attr("class", "pood_b");
-            $(".gnb ul li a").css("color", "black");
-            $("#header").css("background-color", "rgba(255, 255, 255, 100)");
+            // $(".pood").attr("class", "pood_b");
+            // $(".gnb ul li a").css("color", "black");
+            $("#header").css("background-color", "rgba(255, 255, 255, 0.82)");
+            $("#header").css("backdrop-filter", "saturate(180%) blur(20px)");
         } else {
-            $(".pood_b").attr("class", "pood")
-            $(".gnb ul li a").css("color", "white");
-            $("#header").css("background-color", "rgba(255, 255, 255, 0)");
+            // $(".pood_b").attr("class", "pood")
+            // $(".gnb ul li a").css("color", "white");
+            $("#header").css("background-color", "rgba(255, 255, 255, 1)");
+            $("#header").css("backdrop-filter", "saturate(180%) blur(0px)");
         }
     });
 </script>
@@ -361,4 +394,13 @@
                 }
             }
         });
+</script>
+<script>
+    (function () {
+        const header = document.querySelector('.header');
+        const icon = document.querySelector('.icon-container');
+        icon.onclick = function () {
+            header.classList.toggle('menu-open');
+        }
+    }());
 </script>
