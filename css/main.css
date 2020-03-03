@@ -16,12 +16,16 @@ body {
     padding: 0;
 }
 
-a, li {
+a,
+li {
     text-decoration: none;
     outline: none;
 }
 
-a:hover, a:active {text-decoration: none;}
+a:hover,
+a:active {
+    text-decoration: none;
+}
 
 a:visited {
     color: #000;
@@ -43,7 +47,9 @@ li {
     display: inline;
 }
 
-body.noscroll { overflow: hidden; }
+body.noscroll {
+    overflow: hidden;
+}
 
 #pood_first {
     background: #0f4c81;
@@ -124,12 +130,14 @@ body.noscroll { overflow: hidden; }
     display: inline-block;
     overflow: hidden;
 }
-
+.header {
+    display: none;
+}
 .pood {
     display: block;
     width: 78px;
     height: 34px;
-    margin: 18px 20px 18px 40px;
+    margin: 18px 0 18px 0;
     background: url(../img/pood_logo_b.png) 0 0 no-repeat;
     background-size: 78px 34px;
     text-indent: -9999px;
@@ -154,9 +162,8 @@ body.noscroll { overflow: hidden; }
 
 #header .gnb {
     overflow: hidden;
-    position: absolute;
-    right: 3px;
-    top: 0;
+    display: block;
+    float: right;
 }
 
 #header .gnb ul {
@@ -170,29 +177,29 @@ body.noscroll { overflow: hidden; }
     float: left;
     overflow: hidden;
     height: 72px;
-    padding: 0 12px;
     color: #FFF;
     font-family: 'Gilroy', sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 70px;
     transition: all 0.3s;
-    margin-right: 6px;
-    border-bottom: 2px solid transparent;
+    margin-right: 32px;
 }
 
 #header .gnb ul li a {
     color: #000;
 }
 
-#header .gnb ul li:hover {
-    border-bottom: 2px solid #4d4abf;
+#header .gnb ul li a:hover {
+    color: #4d4abf;
 }
 
 #header .gnb ul li a:active {
     color: #000;
 }
-
+#header .gnb ul li:last-child {
+    margin-right: 0;
+}
 #header .gnb_btn {
     position: absolute;
     top: 15px;
@@ -223,13 +230,13 @@ body.noscroll { overflow: hidden; }
     color: #fff;
 }
 
-#header .gnb_btn .number_icon {
+#header .number_icon {
     display: inline-block;
     width: 16px;
     height: 16px;
     border-radius: 4px;
-    background-color: #00a2ff;
-    font-size: 10px;
+    background-color: #4d4abf;
+    font-size: 12px;
     font-weight: 700;
     line-height: 16px;
     text-align: center;
@@ -303,23 +310,27 @@ body.noscroll { overflow: hidden; }
 }
 
 .ab_div_main {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    float: left;
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.92);
-    padding: 32px 32px 32px 32px;
 }
 
-.ab_div_main h1 {
-    font-size: 80px;
-    font-family: 'Gilroy', sans-serif;
+.ab_div_main p {
+    font-size:62px;
     font-weight: 800;
     text-align: left;
-    color: rgba(0, 0, 0, 0.9);
+    color: #fff;
     margin: 0;
-    line-height: 1;
+    line-height: 1.4;
+}
+
+.ab_div_main span {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    color: #fff;
+    margin-top: 32px;
+    line-height: 1.4;
 }
 
 .ab_div_main h2 {
@@ -716,3 +727,8 @@ footer h2 {
     }
 }
 
+.pood-container {
+    max-width: 1366px;
+    margin: 0 auto;
+
+}
