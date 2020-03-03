@@ -181,7 +181,7 @@ body.noscroll {
     font-family: 'Gilroy', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 74px;
     transition: all 0.3s;
     margin-right: 32px;
 }
@@ -198,7 +198,7 @@ body.noscroll {
     color: #000;
 }
 #header .gnb ul li:last-child {
-    margin-right: 0;
+    margin-right: 18px;
 }
 #header .gnb_btn {
     position: absolute;
@@ -231,19 +231,21 @@ body.noscroll {
 }
 
 #header .number_icon {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
-    background-color: #4d4abf;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    text-align: center;
+    position: absolute;
+    right: 0px;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #4d4abf;
     color: #fff;
-    margin-left: 8px;
-    -webkit-transform: translateY(1px);
-    transform: translateY(-2px);
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 18px;
+    font-family: 'Gilroy', sans-serif;
 }
 
 .container {
@@ -308,7 +310,10 @@ body.noscroll {
     top: 0;
     left: 0;
 }
-
+.ab_div img {
+    width: auto !important;
+    height: 40px !important;
+}
 .ab_div_main {
     position: relative;
     float: left;
@@ -321,29 +326,11 @@ body.noscroll {
     text-align: left;
     color: #fff;
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.3;
 }
 
-.ab_div_main span {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: left;
-    color: #fff;
-    margin-top: 32px;
-    line-height: 1.4;
-}
 
-.ab_div_main h2 {
-    font-size: 16px;
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 800;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.9);
-    margin-top: 0;
-    margin-bottom: 12px;
-    margin-left: 5px;
-    line-height: 1;
-}
+
 
 .ab_div_brand {
     position: absolute;
@@ -413,8 +400,8 @@ body.noscroll {
 
 .ab_div {
     position: absolute;
-    bottom: 0%;
-    left: 200px;
+    bottom: 90px;
+    left: 80px;
     z-index: 4;
 }
 
@@ -431,7 +418,7 @@ body.noscroll {
 }
 
 .bh_logo_1 {
-    width: 240px;
+    height: 88px;
 }
 
 .iv_logo_1 {
@@ -443,32 +430,45 @@ body.noscroll {
 }
 
 .ab_div h1 {
-    font-size: 70px;
+    font-size: 62px;
     font-family: 'Gilroy', sans-serif;
     font-weight: 800;
-    line-height: 1;
+    line-height: 1.2;
     color: #fff;
-    margin: 24px 0 0 0;
+    margin-bottom: 12px;
 }
 
 .ab_div h2 {
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 300;
-    margin-top: 24px;
+    font-weight: 400;
     color: #fff;
+    margin-top: 0;
+}
+.goto_box {
+    display: inline-block;
+    margin-top: 42px;
+}
+a.more_btn {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1rem 2.2rem;
+    border-radius: 3rem;
+    background-color: #000;
+    /* background: linear-gradient(45deg,#7869ff,#4d4abf); */
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.15);
+    transition: .8s cubic-bezier(.2,1,.2,1);
+    cursor: pointer;
+    margin-top: 32px;
 }
 
-a.more_btn {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    width: 180px;
-    background-color: #000;
-    margin-top: 40px;
-    text-align: left;
-    bottom: 0;
-    padding: 16px 24px 0 24px;
+a.more_btn:hover {
+    background-color: #4d4abf;
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.25);  
 }
 
 a.more_btn img {
@@ -487,7 +487,7 @@ a.more_btn:active {
     background-color: #fff;
 }
 
-a.more_btn::after {
+/* a.more_btn::after {
     content: '';
     display: block;
     position: absolute;
@@ -499,7 +499,7 @@ a.more_btn::after {
     background: #fff;
     -webkit-transition: width 0.3s;
     transition: width 0.3s;
-}
+} */
 
 ::selection {
     color: #4d4abf;
@@ -557,7 +557,7 @@ a.more_btn .arrow-r::after {
 
 .arrow {
     width: 38px;
-    height: 14px;
+    height: 12px;
     margin: auto;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -565,13 +565,13 @@ a.more_btn .arrow-r::after {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: 40px;
     opacity: 1;
     z-index: 999;
     -webkit-transition: ease 1s;
     transition: ease 1s;
-    -webkit-animation: bouncey 1.6s linear infinite;
-    animation: bouncey 1.6s linear infinite;
+    -webkit-animation: bouncey 1.2s linear infinite;
+    animation: bouncey 1.2s linear infinite;
 }
 
 .arrow ul {
@@ -732,3 +732,73 @@ footer h2 {
     margin: 0 auto;
 
 }
+
+
+
+
+
+
+
+
+ul.swiper-wrapper {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Swiper container */
+  .swiper-container {
+    max-width: 100%;
+  }
+  
+  /* swiper responive image */
+  .swiper-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .swiper-slide {
+  /* Remove this if you want 1 slide perview - than change slidesPerView js-option to 1 -or- 2+ instead of 'auto' */
+    width: 1366px !important;
+  }
+  
+  /* Swiper custom pagination */
+  .swiper-pagination-bullet {
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  /* Swiper custom pagination active state */
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: black;
+  }
+  
+  .swiper-button-prev{
+    height: 100%;
+    top: 0;
+    left:0;
+    padding: 8px;
+      opacity: 1;
+    -webkit-transition: opacity 0.6s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 0.6s;
+  }
+  
+  .swiper-button-next{
+    height: 100%;
+    top: 0;
+    right:0;
+    padding: 8px;
+      opacity: 1;
+    -webkit-transition: opacity 0.6s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 0.6s;
+  }
+  
+  .swiper-button-prev:hover, .swiper-button-next:hover{
+    opacity: 1;
+  }
